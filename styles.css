@@ -11,7 +11,7 @@
 
 /* Global Styles */
 body {
-    background: url("grid-me.png") no-repeat center center fixed;
+    background: var(--bg--color) url("grid-me.png") no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 20px;
