@@ -11,8 +11,9 @@
 
 /* Global Styles */
 body {
-    background: url("grid-me.png");
-    background-size: cover;
+    background-color: #004f8c;
+background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     margin: 0;
     padding: 20px;
     font-family: 'Arial', sans-serif;
