@@ -1,96 +1,104 @@
+/* Color Palette  for Project Page*/
+:root {
+    --bg-color: #f0f2f5;
+    --primary-color: #34495e;
+    --accent-color: #2ecc71;
+    --text-color: #2c3e50;
+    --card-bg: #ffffff;
+    --highlight-bg: #f1c40f;
+    --highlight-text: #2c3e50;
+    --hover-color: #27ae60;
+}
+
+/* Global Styles */
 body {
-  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-  font-family: sans-serif;
-  padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
 h1 {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin: 0;
 }
 
-h2 {
-  font-size: 30px;
+p.subtitle {
+    font-size: 1.2em;
+    color: var(--accent-color);
+    margin: 5px 0 20px;
 }
 
-.established {
-  font-style: italic;
+p.description {
+    font-size: 1em;
+    color: var(--text-color);
+    margin-bottom: 30px;
 }
 
-h1, h2, p {
-  text-align: center;
+/* Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.menu {
-  width: 80%;
-  background-color: burlywood;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  max-width: 500px;
+/* Card Styles */
+.card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -25px;
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-hr {
-  height: 2px;
-  background-color: brown;
-  border-color: brown;
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
 
-.bottom-line {
-  margin-top: 25px;
+.card-content {
+    padding: 15px;
+    text-align: left;
 }
 
-h1, h2 {
-  font-family: Impact, serif;
+.card-content h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: var(--primary-color);
 }
 
-.item p {
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 18px;
+.card-content p {
+    color: var(--text-color);
 }
 
-.flavor, .dessert {
-  text-align: left;
-  width: 75%;
+.highlight {
+    background: var(--highlight-bg);
+    color: var(--highlight-text);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
-.price {
-  text-align: right;
-  width: 25%;
+.card-content a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
 }
 
-/* FOOTER */
-
-footer {
-  font-size: 14px;
-}
-
-.address {
-  margin-bottom: 5px;
-}
-
-a {
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-a:hover {
-  color: brown;
-}
-
-a:active {
-  color: brown;
+.card-content a:hover {
+    color: var(--hover-color);
 }
