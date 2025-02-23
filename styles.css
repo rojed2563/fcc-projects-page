@@ -11,15 +11,11 @@
 
 /* Global Styles */
 body {
-<<<<<<< HEAD
-    background-color: #004f8c;
-background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-=======
+
     background-color: #004f8c;
 background-image: url("https://transparenttextures.com/patterns/axiom-pattern.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
->>>>>>> 631c089e4abbd2ebae2afe2fd2aad427c77c8e03
+
     margin: 0;
     padding: 20px;
     font-family: 'Arial', sans-serif;
