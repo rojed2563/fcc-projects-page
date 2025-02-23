@@ -12,19 +12,15 @@
 
 /* Global Styles */
 body {
-    /* Replace "path-to-image.jpg" with your actual image path */
-    background: url("grid-me.png") no-repeat center center fixed;
-    background-size: cover; /* Ensures the image covers the entire screen */
-    margin: 0; /* Removes default margin to ensure full coverage */
-    padding: 0;
-      
-    font-family: 'Arial', sans-serif;
-    background: var(--bg-color);
-    color: var(--text-color);
+    background: var(--bg-color) url("grid-me.png") no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
     text-align: center;
 }
+
 
 h1 {
     color: var(--primary-color);
