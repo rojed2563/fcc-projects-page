@@ -1,6 +1,8 @@
-/* Color Palette */
+/* Color Palette  for Project Page*/
 :root {
-    --bg-color: #f0f2f5;
+    background: var(--bg-color) url('grid-me.png') no-repeat center center;
+    background-size: cover;
+    /* --bg-color: #f0f2f5; */
     --primary-color: #34495e;
     --accent-color: #2ecc71;
     --text-color: #2c3e50;
