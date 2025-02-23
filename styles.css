@@ -11,7 +11,7 @@
 
 /* Global Styles */
 body {
-    background: var(--bg--color) url("grid-me.png") no-repeat center center fixed;
+    background: url("grid-me.png") no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 20px;
@@ -19,7 +19,6 @@ body {
     color: var(--text-color);
     text-align: center;
 }
-
 
 h1 {
     color: var(--primary-color);
