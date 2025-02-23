@@ -24,7 +24,7 @@ background-image: url("https://transparenttextures.com/patterns/axiom-pattern.pn
 }
 
 h1 {
-    color: var(--primary-color);
+    color: var(--text-color);
     font-size: 2.5em;
     margin: 0;
 }
