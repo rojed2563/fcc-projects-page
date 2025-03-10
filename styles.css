@@ -14,11 +14,23 @@ header {
     background: #2C3E50;  /* Dark gray background */
     color: #FFFFFF;  /* White text */
     text-align: center;
-    padding: 30px;
+    padding: 7px;
     width: 100vw;
     box-sizing: border-box;
     border-bottom: 4px solid var(--accent-color);
     margin: 0;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px 20px;
+}
+
+.small-image {
+    padding: 15px;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Main Content */
