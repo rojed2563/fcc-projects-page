@@ -1,43 +1,29 @@
-/* Color Palette  for Project Page*/
-:root {
-    background: var(--bg-color) url('grid-me.png') no-repeat center center;
-    background-size: cover;
-    /* --bg-color: #f0f2f5; */
-    --primary-color: #34495e;
-    --accent-color: #2ecc71;
-    --text-color: #2c3e50;
-    --card-bg: #ffffff;
-    --highlight-bg: #f1c40f;
-    --highlight-text: #2c3e50;
-    --hover-color: #27ae60;
-}
-
-/* Global Styles */
+/* Reset default margins & padding */
 body {
-    font-family: 'Arial', sans-serif;
-    background: var(--bg-color);
-    color: var(--text-color);
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #1E3A5F url('./images/grid-me.png') repeat;  /* Blueprint blue with grid */
+    background-size: auto;
+    color: var(--text-color);
     text-align: center;
 }
 
-h1 {
-    color: var(--primary-color);
-    font-size: 2.5em;
+/* Full-width Header */
+header {
+    background: #2C3E50;  /* Dark gray background */
+    color: #FFFFFF;  /* White text */
+    text-align: center;
+    padding: 30px;
+    width: 100vw;
+    box-sizing: border-box;
+    border-bottom: 4px solid var(--accent-color);
     margin: 0;
 }
 
-p.subtitle {
-    font-size: 1.2em;
-    color: var(--accent-color);
-    margin: 5px 0 20px;
-}
-
-p.description {
-    font-size: 1em;
-    color: var(--text-color);
-    margin-bottom: 30px;
+/* Main Content */
+main {
+    padding: 20px;
 }
 
 /* Container */
@@ -52,55 +38,29 @@ p.description {
 
 /* Card Styles */
 .card {
-    background: var(--card-bg);
+    background: var(--card-bg, #ffffff);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
+    padding: 15px;
 }
 
+/* Hover effect: Darker shadow */
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-.card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.card-content {
-    padding: 15px;
-    text-align: left;
-}
-
-.card-content h3 {
-    margin: 0;
-    font-size: 1.1em;
-    color: var(--primary-color);
-}
-
-.card-content p {
-    color: var(--text-color);
-}
-
-.highlight {
-    background: var(--highlight-bg);
-    color: var(--highlight-text);
-    padding: 2px 4px;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-.card-content a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: var(--accent-color);
-    font-weight: bold;
-}
-
-.card-content a:hover {
-    color: var(--hover-color);
+/* Full-width Footer */
+footer {
+    background: #2C3E50;  /* Dark gray background */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px;
+    width: 100vw;
+    box-sizing: border-box;
+    border-top: 4px solid var(--accent-color);
+    margin-top: 30px;
+    height: auto;
 }
